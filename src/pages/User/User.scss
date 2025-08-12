@@ -1,6 +1,72 @@
 .user {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: calc(91px + 2rem) 3rem 2rem calc(117px + 4rem);
+  gap: 3rem;
 }
+
+.user-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 500;
+  }
+
+  p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  &__firstname {
+    color: red;
+  }
+}
+
+.chart-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.chart-frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+
+  &__average-sessions {
+    width: 33%;
+  }
+
+  &__performance {
+    width: 33%;
+  }
+
+  &__score {
+    width: 33%;
+  }
+}
+
+.nutrition {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 25%;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+

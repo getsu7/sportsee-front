@@ -1,0 +1,19 @@
+.score-chart {
+  background-color: #FBFBFB;
+  position: relative;
+
+  &__title {
+    font-size: 15px;
+    font-weight: 500;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+  }
+
+  &__container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

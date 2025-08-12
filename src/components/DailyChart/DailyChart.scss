@@ -1,10 +1,52 @@
 .daily-chart {
   background: #FBFBFB;
   padding: 1rem;
+  border-radius: 5px;
 
   &__title {
     font-weight: 500;
     font-size: 15px;
     margin: 0;
   }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  &__legend {
+    display: flex;
+    color: #74798C;
+    font-weight: 500;
+    font-size: 14px;
+    gap: 1rem;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__legend-dot--black {
+    background: black;
+    height: 8px;
+    width: 8px;
+    border-radius: 4px;
+    align-self: center;
+  }
+
+  &__legend-dot--red {
+    background: red;
+    height: 8px;
+    width: 8px;
+    border-radius: 4px;
+    align-self: center;
+  }
+
+  &__legend-infos {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
 }

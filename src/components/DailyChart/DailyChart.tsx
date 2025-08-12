@@ -51,10 +51,15 @@ function DailyChart({sessions}: DailyChartProps) {
 
     return (
         <div className="daily-chart">
-            <div>
+            <div className="daily-chart__header">
                 <h2 className="daily-chart__title">Activité quotidienne</h2>
                 <span className="daily-chart__legend">
-
+                    <div className="daily-chart__legend-infos">
+                        <span className="daily-chart__legend-dot--black"></span><p>Poids (kg)</p>
+                    </div>
+                    <div className="daily-chart__legend-infos">
+                        <span className="daily-chart__legend-dot--red"></span><p>Calories brûlées (kCal)</p>
+                    </div>
                 </span>
             </div>
 
@@ -63,6 +68,7 @@ function DailyChart({sessions}: DailyChartProps) {
                     <BarChart data={formattedData} barGap={10}
                     >
                         <XAxis
+                            dataKey="day"
                             tick={{fill: "#9B9EAC"}}
                             tickLine={false}
                             stroke="#DEDEDE"

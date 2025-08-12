@@ -1,13 +1,14 @@
 .score-chart {
   background-color: #FBFBFB;
   position: relative;
+  border-radius: 5px;
 
   &__title {
     font-size: 15px;
     font-weight: 500;
     position: absolute;
-    top: 6px;
-    left: 6px;
+    top: 4px;
+    left: 24px;
   }
 
   &__container {

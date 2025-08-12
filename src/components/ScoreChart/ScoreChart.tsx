@@ -21,17 +21,17 @@ function ScoreChart({score}: ScoreChartProps) {
         <div className="score-chart">
             <h2 className="score-chart__title">Score</h2>
             <div className="score-chart__container">
-                <ResponsiveContainer width="100%" height={200}>
+                <ResponsiveContainer width="100%" height={263}>
                     <PieChart>
                         <Pie
                             data={data}
                             cx="50%"
                             cy="50%"
-                            innerRadius={67}
-                            outerRadius={77}
+                            innerRadius={90}
+                            outerRadius={100}
                             cornerRadius={10}
-                            startAngle={80}
-                            endAngle={80 + (data[0].value * 360)}
+                            startAngle={90}
+                            endAngle={90 + (data[0].value * 360)}
                             fill="#FF0000"
                             stroke="none"
                             dataKey="value"

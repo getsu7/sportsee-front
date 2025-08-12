@@ -1,4 +1,5 @@
 import {PolarAngleAxis, PolarGrid, Radar, RadarChart, ResponsiveContainer} from "recharts";
+import "./PerformanceChart.scss"
 
 interface PerformanceData {
     value: number;
@@ -40,8 +41,8 @@ function PerformanceChart({data}: PerformanceChartProps) {
     });
 
     return (
-        <div className="performance-chart" style={{backgroundColor: '#282D30', borderRadius: '5px'}}>
-            <ResponsiveContainer width="100%" height={200}>
+        <div className="performance-chart">
+            <ResponsiveContainer width="100%" height={263}>
                 <RadarChart cx="50%" cy="50%" outerRadius="70%" data={translatedData}>
                     <PolarGrid radialLines={false}/>
                     <PolarAngleAxis

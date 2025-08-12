@@ -49,7 +49,7 @@ function SessionChart({sessions}: SessionChartProps) {
     return (
         <div className="session-chart" style={{backgroundColor: '#FF0000', borderRadius: '5px', position: 'relative'}}>
             <h2 className="session-chart__title">Durée moyenne des sessions</h2>
-            <ResponsiveContainer width="100%" height={200}>
+            <ResponsiveContainer width="100%" height={263}>
                 <AreaChart data={formattedData}>
                     <XAxis
                         dataKey="day"
